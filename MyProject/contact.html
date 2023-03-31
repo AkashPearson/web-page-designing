@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>my project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body{background:#fff;}
+.c1{position:absolute; padding:5px 20px;font-family:monospace;font-size:20px;  }
+.c1:hover{transition:transform 2s;background:rgb(187 187 245);border-radius:5px;
+ cursor:pointer;text-decoration:underline;color:#fff;}
+#a1{left:15%;}
+#a2{left:30%;}
+#a3{left:45%;}
+#a4{left:60%;}
+#a5{left:75%;}
+ .phone{position:absolute;left:10%; color:#f44336; top:15%;} 
+ .phone h5{  font-size:20px;}
+ .phone p{ margin-top:-20px;}
+ .phone a{position:absolute;left:-22%;font-size:30px; top:20%;}
+ 
+ .home{position:absolute;left:10%; top:40%; color:#f44336;}
+ .home a{position:absolute;left:-20%; font-size:30px; top:22%; color:#f44336;}
+ .home h5{  font-size:20px;}
+ .home p{ margin-top:-20px;}
+ 
+.envelope{position:absolute;left:10%; top:60%;  color:#f44336;}
+.envelope a{position:absolute;left:-21%; top:22%; font-size:30px; color:#f44336;}
+ .envelope h5{  font-size:20px;}
+
+ .fm{position:absolute; left:50%; top:20%; right:20%;}
+.fm input,.fm textarea{width:100%; padding:15px;}
+ .btn{margin-top:5px;padding:10px;margin-left:20px;}
+ .btn:hover{cursor:pointer;background:#f44336;}
+ 
+.icons{
+position:absolute;
+text-align:center;
+top:95%;
+left:40%;
+color:#f44336;
+}
+.footer{text-align:center;position:absolute;left:30%;top:80%;} 
+ </style>
+ <script>
+ function ncheck(){
+var nc,vc;
+nc=document.getElementById("n").value;
+nc=nc.trim();
+vc=/^[a-zA-Z ]+$/;
+if(!nc.match(vc)){
+document.getElementById("ns").innerHTML="**check name!**";
+ return 'no';
+}
+else{
+document.getElementById("ns").innerHTML=" ";
+document.getElementById("ta").value=nc;
+return 'ok';
+}
+} 
+
+function echeck(){
+var ec,ev;
+ec=document.getElementById("e").value;
+ev=/^[0-9a-zA-Z._-]+\@[a-zA-Z]+\.[a-zA-Z.]{2,6}$/;
+if(!ec.match(ev)){
+document.getElementById("es").innerHTML="***check Email !**";
+}
+else{
+
+document.getElementById("es").innerHTML=" ";
+document.getElementById("ta").value=ec;
+}
+}
+
+function pcheck(){
+var pc,pv;
+pc=document.getElementById("ph").value;
+pv=/^[0-9]{10,10}$/;
+if(!pc.match(pv)){
+document.getElementById("ps").innerHTML="***check phone no!**";
+}
+else{
+document.getElementById("ps").innerHTML=" ";
+document.getElementById("ta").value=pc;
+}
+}
+
+ </script>
+</head>
+<body>
+
+ 
+<div id="a1" class="c1"><a href="my project.html">HOME</a></div>
+<div id="a2" class="c1"><a href="service.html">SERVICE</a></div>
+<div id="a3" class="c1"><a href="about.html">ABOUT</a></div>
+<div id="a4" class="c1"><a href="contact.html">CONTACT</a></div>
+<div id="a5" class="c1"><a href="history.html">HISTORY</a></div>
+
+<div class="home">
+<a class="fa fa-home"></a>
+<h5>main road,near akash institute</h5>
+<p>Ranchi,Jharkhand</p>
+</div>
+
+<div class="phone">
+<a class="fa fa-phone"></a>
+<h5>+91  6288797356</h5>
+<p>Monday to Saturday,<br>10am to 10pm</p>
+</div>
+
+
+<div class="envelope">
+<a class="fa fa-envelope-o"></a>
+<h5>akashkumar@gmail.com</h5>
+<p>email us </p>
+</div>
+ <form class="fm">
+               <input type="text" id="n" onblur="ncheck()" placeholder="Enter Your Name"> 
+			   <span id="ns" style="color:red"></span><br>
+               <input type="text" id="e" onblur="echeck()" placeholder="Enter Your Email">
+			   <span id="es" style="color:red"></span><br><br>
+               <input type="text" id="ph" onblur="pcheck()" placeholder="Enter Ph no">   
+			   <span id="ps" style="color:red"></span><br><br>
+			   <textarea rows="8" placeholder="write message"></textarea>
+                <button class="btn">Send Message</button>
+ </form>
+ <div class="contact">
+<a class="fa fa-email"></a>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<div class="footer">
+<h4>About Us</h4>
+<p>Increase brand awareness, capture qualified leads and help your sales team.</p>
+</div>
+<div class="icons">
+<i class="fa fa-facebook"></i>
+<i class="fa fa-twitter"></i>
+<i class="fa fa-instagram"></i>
+<i class="fa fa-linkedin"></i>
+<i class="fa fa-google"></i>
+<i class="fa fa-youtube"></i>
+<i class="fa fa-pinterest"></i>
+</div>
+  
+
+</body>
+</html>

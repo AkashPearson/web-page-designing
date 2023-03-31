@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>my project</title>
+<style>
+.c1{
+position:absolute; 
+ padding:5px 20px;
+ font-family:monospace;
+ font-size:20px;  }
+.c1:hover{
+transition:transform 2s;
+ background:rgb(187 187 245);
+  border-radius:5px;
+ cursor:pointer;
+text-decoration:underline;
+color:#fff;
+}
+#a1{left:15%;}
+#a2{left:30%;}
+#a3{left:45%;}
+#a4{left:60%;}
+#a5{left:75%;}
+
+.sky{
+width:110%; height:100%;  background-image:url(sky.jpg); background-position:center;
+left:-2%; overflow:hidden;}
+
+.highway{overflow:hidden;
+position:absolute; height:100vh; background-image:url(road.jpg);
+width:500%; height:30%; top:70%; animation:highway 5s linear infinite;
+ background-repeat:repeat-x; }
+@keyframes highway{ 
+100%{transform:translateX(-3000px);}
+}
+
+.city{
+position:absolute;
+height:250px;
+width:500%;
+bottom:30%; background-image:url(city.png);
+animation:city 20s linear infinite;
+ background-repeat:repeat-x; overflow:hidden;}
+@keyframes city{ 
+100%{transform:translateX(-2000px);}}
+
+.sky h3{text-align:center;font-size:4vw; color:#234;font-family:arial black;}
+
+.car{ 
+position:absolute; width:350px; left:30%; bottom:10%;}
+.car img{width:100%; animation:car 1s linear infinite;}
+@keyframes car{100%{transform:translateX(-2px);}50%{transform:translateX(2px);}
+0%{transform:translateX(-2px);}}
+.wheel img{width:70px;  animation:wheel 1s linear infinite; }
+ @keyframes wheel{100%{transform:rotate(360deg);}}
+.front-wheel{position:absolute;  bottom:10%; left:47.5%;}
+.back-wheel{position:absolute; bottom:10%; left:32%;}
+.parrot{ position:absolute;  height:30%; top:0%; right:-10%;width:10%;
+animation:parrot 20s linear 1;}
+ @keyframes parrot{0%{transform:translateX(0px);}100%{transform:translateX(-1500px);}}
+.fly{ position:absolute;  height:30%; top:30%; right:-50%;width:10%;
+animation:parrot 30s linear infinite;}
+ @keyframes parrot{0%{transform:translateX(0px);}100%{transform:translateX(-2000px);}}
+.plane{ position:absolute;  height:30%; top:30%; right:-50%;width:30%;
+animation:parrot 15s linear infinite;}
+ @keyframes parrot{0%{transform:translateX(0px);}100%{transform:translateX(-2000px);}}
+
+</style>
+</head>
+<body>
+
+ 
+<div id="a1" class="c1"><a href="my project.html">HOME</a></div>
+<div id="a2" class="c1"><a href="service.html">SERVICE</a></div>
+<div id="a3" class="c1"><a href="about.html">ABOUT</a></div>
+<div id="a4" class="c1"><a href="contact.html">CONTACT</a></div>
+<div id="a5" class="c1"><a href="history.html">HISTORY</a></div>
+<div class="sky">
+<h3>Welcome To Creative World.<br>Discover Yourself</h3>
+<img src="plane3.png" class="plane">
+<img src="gif2.gif" class="parrot">
+ 
+  <div class="highway"></div>
+  <div class="city"></div>
+ <img src="fly.gif" class="fly">  
+  <div class="car"><img src="car.png"></div>
+  <div class="wheel">
+     <img src="wheel.png" class="back-wheel">
+     <img src="wheel.png" class="front-wheel">
+</div>
+   
+</div>
+ 
+</body>
+</html>

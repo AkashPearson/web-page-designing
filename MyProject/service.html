@@ -1,0 +1,92 @@
+ <style>
+body{
+background-color:rgba(128,255,225);
+}
+  
+.c1{
+position:absolute; 
+ padding:5px 20px;
+ font-family:monospace;
+ font-size:20px;  }
+.c1:hover{
+transition:transform 2s;
+ background:rgb(187 187 245);
+  border-radius:5px;
+ cursor:pointer;
+text-decoration:underline;
+color:#234;
+}
+#a1{left:15%;}
+#a2{left:30%;}
+#a3{left:45%;}
+#a4{left:60%;}
+#a5{left:75%;}
+.x{
+position:absolute;
+width:15%;
+height:15%;
+transition:2s;
+border-style:solid;
+ 
+} 
+#a11{top:31%;left:2%;width:20%;height:20%;border-width5px;border-color:red green blue yellow;
+overflow:hidden;}
+#img1:hover{transform:scale(2); cursor:pointer;transition:3s;}
+#a22{top:31%;left:23%;width:20%;height:20%;border-width:5px;border-color:red green blue yellow;
+overflow:hidden;}
+#img2:hover{transform:scale(2); cursor:pointer;transition:3s;}
+#a33{top:53%;left:2%;width:20%;height:20%;border-width:5px;border-color:red green blue yellow;
+overflow:hidden;}
+#img3:hover{transform:scale(2);transition:3s; cursor:pointer;}
+#a44{top:53%;left:23%;width:20%;height:20%;border-width:5px;border-color:red green blue yellow;
+overflow:hidden;}
+#img4:hover{transform:scale(2);transition:3s; cursor:pointer;}
+#a55{top:76%;left:2%;width:20%;height:20%;border-width:5px;border-color:red green blue yellow;
+overflow:hidden;}
+#img5:hover{transform:scale(2);transition:3s; cursor:pointer;}
+#a66{top:76%;left:23%;width:20%;height:20%;border-width:5px;border-color:red green blue yellow;
+overflow:hidden;}
+#img6:hover{transform:scale(2);transition:3s; cursor:pointer;}
+
+#a12{
+position:absolute;
+top:31%;
+width:52%;
+height:65%;
+left:45%;
+}
+#s{
+position:absolute;
+bottom:0%;
+width:100%;
+left:0%;
+font-family:cursive;
+text-align:center;
+font-size:3vw;
+color:red;
+}
+</style>
+<script>
+function show(a,b)
+{
+  document.getElementById("m").src=a;
+  document.getElementById("s").innerHTML=b;
+}
+</script>
+<body>
+<div class="x" id="a11"><img src="dis.jpg" id="img1" width="100%" height="100%" onmouseover="show(this.src,'Discount')"></div>
+<div class="x" id="a22"><img src="service1.jpg" id="img2"width="100%" height="100%" onmouseover="show(this.src,'Service Center')"></div>
+<div class="x" id="a33"><img src="service.jpg" id="img3"width="100%" height="100%" onmouseover="show(this.src,'Fast Service')"></div>
+<div class="x" id="a44"><img src="home service.jpg " id="img4"width="100%" height="100%" onmouseover="show(this.src,'Home Service')"></div>
+<div class="x" id="a55"><img src="behaviour.jpg " id="img5"width="100%" height="100%" onmouseover="show(this.src,'Well Behaved')"></div>
+<div class="x" id="a66"><img src="hand over.jpg " id="img6"width="100%" height="100%" onmouseover="show(this.src,'Hand Over You')"></div>
+<div id="a12">
+<img src="service1.jpg" width="100%" height="100%" id="m">
+<span id="s"></span></div>
+ 
+<div id="a1" class="c1"><a href="my project.html">HOME</a></div>
+<div id="a2" class="c1"><a href="service.html">SERVICE</a></div>
+<div id="a3" class="c1"><a href="about.html">ABOUT</a></div>
+<div id="a4" class="c1"><a href="contact.html">CONTACT</a></div>
+<div id="a5" class="c1"><a href="history.html">HISTORY</a></div>
+</body>

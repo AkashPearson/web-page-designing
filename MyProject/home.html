@@ -1,0 +1,48 @@
+ <html>
+ <head>
+  
+<style> 
+}
+#main{
+position:absolute;
+height:auto;
+width:100%;
+ }
+img{
+height:50%;
+left:20%;
+top:20%;
+width:50%;
+position:absolute;
+}
+</style>
+</head>
+<body>
+<div id="main">
+    <img src="m1.jfif" id="slideshow">
+	</div>
+<script>	
+function first(){
+document.getElementById("slideshow").src="m2.jfif";
+}
+function second(){
+document.getElementById("slideshow").src="m3.jfif";
+}
+function third(){
+document.getElementById("slideshow").src="m4.jfif";
+}
+function four(){
+document.getElementById("slideshow").src="m5.jfif";
+}
+function five(){
+document.getElementById("slideshow").src="m1.jfif";
+}
+setInterval(first,2000);
+setInterval(second,4000);
+setInterval(third,6000);
+setInterval(four,8000);
+setInterval(five,10000);
+</script>	
+</body>
+
+</html>
